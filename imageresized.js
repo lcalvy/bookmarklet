@@ -15,7 +15,7 @@ function callback () {
         if (!state || /loaded|complete/.test(state)) {
             jQuery.noConflict();
      
-        $('img').each(function(i,el){
+        jQuery('img').each(function(i,el){
         console.log(el.clientWidth, el.naturalWidth); 
         el.style.borderStyle="solid";
         el.style.borderWidth="5px";
